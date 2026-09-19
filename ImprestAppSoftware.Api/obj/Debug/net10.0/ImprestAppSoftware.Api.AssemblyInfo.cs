@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImprestAppSoftware.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a57a9814c17a7bd928010460b706212e4e6ef7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1313eb1f85b2faee45b08a9a3747478f7bc7d80b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImprestAppSoftware.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImprestAppSoftware.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

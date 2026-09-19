@@ -6,6 +6,15 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
+builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<ClienteRepository>();
+
+builder.Services.AddScoped<IEquipamentoService, EquipamentoService>();
+builder.Services.AddScoped<EquipamentoRepository>();
+
+builder.Services.AddScoped<IEmprestimoService, EmprestimoService>();
+builder.Services.AddScoped<EmprestimoRepository>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -33,9 +42,12 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
+
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
+
+
